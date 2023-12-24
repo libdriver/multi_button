@@ -1,0 +1,95 @@
+var group__multi__button__basic__driver =
+[
+    [ "multi_button_s", "structmulti__button__s.html", [
+      [ "status", "structmulti__button__s.html#a5393c99e246925076b1dfd69a64177ef", null ],
+      [ "times", "structmulti__button__s.html#a6d64faebc51e937a5e44c4ef2d58bc9b", null ]
+    ] ],
+    [ "multi_button_time_s", "structmulti__button__time__s.html", [
+      [ "s", "structmulti__button__time__s.html#a2dee666f0c1fe072c549ff86b1d0a8ab", null ],
+      [ "us", "structmulti__button__time__s.html#aacd10328101739a1c5576f0fbb6fd8e7", null ]
+    ] ],
+    [ "multi_button_decode_s", "structmulti__button__decode__s.html", [
+      [ "diff_us", "structmulti__button__decode__s.html#acf17f0794fafba32ae32d5596397ef19", null ],
+      [ "t", "structmulti__button__decode__s.html#a20306d5568761d14a9a32e034d0420b1", null ]
+    ] ],
+    [ "multi_button_single_s", "structmulti__button__single__s.html", [
+      [ "cnt", "structmulti__button__single__s.html#a052c6d6c4fd9b6fe5b2c4330b1376e57", null ],
+      [ "decode", "structmulti__button__single__s.html#ab47e309f84fc1d288b9ea1e14c312977", null ],
+      [ "decode_len", "structmulti__button__single__s.html#aeb2b9296292e67a9da289387bbcad1ab", null ],
+      [ "last_time", "structmulti__button__single__s.html#ac4d1b005e65b8045643ccf16c6b47e93", null ],
+      [ "level", "structmulti__button__single__s.html#abbb6c7c49508c1ac374683f2d1159e08", null ],
+      [ "long_triggered", "structmulti__button__single__s.html#a359bc316cff96f9b4184610530434057", null ],
+      [ "short_triggered", "structmulti__button__single__s.html#adb3450c4b6dd700c4cbc753f7399c356", null ]
+    ] ],
+    [ "multi_button_handle_s", "structmulti__button__handle__s.html", [
+      [ "button", "structmulti__button__handle__s.html#a4ab9a48c57358faa4c7e2c6e0ad39ae0", null ],
+      [ "check_time", "structmulti__button__handle__s.html#a3259ad7eb8a1aeae46351acd5a805d4a", null ],
+      [ "col", "structmulti__button__handle__s.html#ae739ef8fb1ba860a6b2c9e312cc65e86", null ],
+      [ "debug_print", "structmulti__button__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b", null ],
+      [ "delay_ms", "structmulti__button__handle__s.html#a406c9433252b7366de417b7a60915c81", null ],
+      [ "inited", "structmulti__button__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f", null ],
+      [ "interval", "structmulti__button__handle__s.html#acd9ed1ccc44de55e1d3eff5569663695", null ],
+      [ "long_time", "structmulti__button__handle__s.html#a47eb6b6defa2b92e6c2f4ba1f5b2ac55", null ],
+      [ "matrix_deinit", "structmulti__button__handle__s.html#a2050209eb07652ef0860b04b6ae6b6c0", null ],
+      [ "matrix_init", "structmulti__button__handle__s.html#a5def09da7fce8d4a38f81c719ed8c987", null ],
+      [ "matrix_read_row", "structmulti__button__handle__s.html#a6147ef38e96efb5e6349e9a92ed891c0", null ],
+      [ "matrix_write_row", "structmulti__button__handle__s.html#addc9c8625a1292a1f3153ec3c280ddea", null ],
+      [ "period", "structmulti__button__handle__s.html#a81b43df06332b4fef558297592bb7ff1", null ],
+      [ "receive_callback", "structmulti__button__handle__s.html#ad438078b80f25dc0bf116ad43de051c5", null ],
+      [ "repeat_cnt", "structmulti__button__handle__s.html#aa9dd4e7fdc696e83ff806733e72e0752", null ],
+      [ "repeat_time", "structmulti__button__handle__s.html#a41710ffb92716758b98e10cc8b6aac8f", null ],
+      [ "row", "structmulti__button__handle__s.html#ab86a0a249da45b017b7cb9bbb6982177", null ],
+      [ "short_time", "structmulti__button__handle__s.html#a4afd21a3dd2b26060e6f2427e88c6b0e", null ],
+      [ "timeout", "structmulti__button__handle__s.html#ab5627d8d8b095c198e2523c44ca380ac", null ],
+      [ "timestamp_read", "structmulti__button__handle__s.html#a6d4e0615711cb839c685fa3027e957e3", null ]
+    ] ],
+    [ "multi_button_info_s", "structmulti__button__info__s.html", [
+      [ "chip_name", "structmulti__button__info__s.html#af890958c72bd715cc6454a10dc846ae6", null ],
+      [ "driver_version", "structmulti__button__info__s.html#a41b0bd442708b70d252c50b92c75265a", null ],
+      [ "interface", "structmulti__button__info__s.html#aebaa6c28dd4f2c3dc27566fcb910fd28", null ],
+      [ "manufacturer_name", "structmulti__button__info__s.html#ad25285dbf810c90f8eaf3fcef6f2b2ea", null ],
+      [ "max_current_ma", "structmulti__button__info__s.html#a9db82802561bf22d799b03a345f1d1dc", null ],
+      [ "supply_voltage_max_v", "structmulti__button__info__s.html#a3d2b12bcac7a85ea8646bff9debe8660", null ],
+      [ "supply_voltage_min_v", "structmulti__button__info__s.html#ad8bde6ddadaf43d951e62f3befb9d35a", null ],
+      [ "temperature_max", "structmulti__button__info__s.html#a3366a5dce9b829e03c3d321c2b4df3f6", null ],
+      [ "temperature_min", "structmulti__button__info__s.html#a8f9dbe66ac0b66ebae0a36fcb4ba368e", null ]
+    ] ],
+    [ "MULTI_BUTTON_NUMBER", "group__multi__button__basic__driver.html#ga032a05eb35adc91e712696bcefb250eb", null ],
+    [ "multi_button_decode_t", "group__multi__button__basic__driver.html#gac74e1fdeb3c284ea4065b93709ec7251", null ],
+    [ "multi_button_handle_t", "group__multi__button__basic__driver.html#ga2a07ba574ad643733038300a6f66386c", null ],
+    [ "multi_button_info_t", "group__multi__button__basic__driver.html#gafece2b939a29b36dc7df3117754f3639", null ],
+    [ "multi_button_single_t", "group__multi__button__basic__driver.html#ga89b89ac1f6e6e1002326b30b677f3036", null ],
+    [ "multi_button_t", "group__multi__button__basic__driver.html#gae4e47ecd3b03c8b4b0f626a40faf0e6d", null ],
+    [ "multi_button_time_t", "group__multi__button__basic__driver.html#gada3b173fba530ed4c96f8260105a5d00", null ],
+    [ "multi_button_status_t", "group__multi__button__basic__driver.html#ga7987c8f738df7bbd2793486acfda5275", [
+      [ "MULTI_BUTTON_STATUS_PRESS", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275aa1edf8ac820c6695e01932b3440940a8", null ],
+      [ "MULTI_BUTTON_STATUS_RELEASE", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275ad5827ad4778084abe15a4f164bbe70c5", null ],
+      [ "MULTI_BUTTON_STATUS_SINGLE_CLICK", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275a7772a010c74c849d354c092c2dcb0e3b", null ],
+      [ "MULTI_BUTTON_STATUS_DOUBLE_CLICK", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275a42cfd3fb4212f6a168dfa9aa547c6781", null ],
+      [ "MULTI_BUTTON_STATUS_TRIPLE_CLICK", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275a9a673c96222bcb1004e6be1b1baf6a58", null ],
+      [ "MULTI_BUTTON_STATUS_REPEAT_CLICK", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275a318bdd340b2a99458da4412f5e180ef3", null ],
+      [ "MULTI_BUTTON_STATUS_SHORT_PRESS_START", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275aaf9ec571dfe82a75959ad0e736d8f596", null ],
+      [ "MULTI_BUTTON_STATUS_SHORT_PRESS_END", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275a1ed0f2ba80506b91793034b325ac4bd6", null ],
+      [ "MULTI_BUTTON_STATUS_LONG_PRESS_START", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275af330018d42308040fe68e2387fbbd7e4", null ],
+      [ "MULTI_BUTTON_STATUS_LONG_PRESS_HOLD", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275a988eb448974f38aecff1b28e5f3014d7", null ],
+      [ "MULTI_BUTTON_STATUS_LONG_PRESS_END", "group__multi__button__basic__driver.html#gga7987c8f738df7bbd2793486acfda5275a5463f56a6d178b62a74259848caa5bbe", null ]
+    ] ],
+    [ "multi_button_deinit", "group__multi__button__basic__driver.html#ga269015bfcc9f082171cf4fbe557dcfd5", null ],
+    [ "multi_button_get_interval", "group__multi__button__basic__driver.html#ga107b34c236fd0092a994c1ea343b7f76", null ],
+    [ "multi_button_get_long_time", "group__multi__button__basic__driver.html#ga970336c776599658faa6b532874497c2", null ],
+    [ "multi_button_get_period", "group__multi__button__basic__driver.html#gad029737e4f534858df8fc5defb51fe7c", null ],
+    [ "multi_button_get_repeat_cnt", "group__multi__button__basic__driver.html#ga368e569a621417b404cb83de5b868f96", null ],
+    [ "multi_button_get_repeat_time", "group__multi__button__basic__driver.html#ga0ec9e59719adbf8b461eca92c8e77eac", null ],
+    [ "multi_button_get_short_time", "group__multi__button__basic__driver.html#ga46d1f733ae5ad3adc5b2cea7c641e70d", null ],
+    [ "multi_button_get_timeout", "group__multi__button__basic__driver.html#ga94031e1504d1797089e27365b550c5d6", null ],
+    [ "multi_button_info", "group__multi__button__basic__driver.html#gaa6210d605de028364780c804d54b65ab", null ],
+    [ "multi_button_init", "group__multi__button__basic__driver.html#ga1c9543dfbc64b45abd7f8eca4195e132", null ],
+    [ "multi_button_process", "group__multi__button__basic__driver.html#ga20652fbdc820c84d0403655bb30609af", null ],
+    [ "multi_button_set_interval", "group__multi__button__basic__driver.html#gaecfdd67b4b82de728661a07a4b5f0ea5", null ],
+    [ "multi_button_set_long_time", "group__multi__button__basic__driver.html#gaad4013c553ee8335d7dde42d8746e456", null ],
+    [ "multi_button_set_period", "group__multi__button__basic__driver.html#gadb77981956bbb80c5df26eb7daca03b3", null ],
+    [ "multi_button_set_repeat_cnt", "group__multi__button__basic__driver.html#gacee26297a2ea3b0d81a42ce7f0b067aa", null ],
+    [ "multi_button_set_repeat_time", "group__multi__button__basic__driver.html#gab3e7ad4a3081abd6b62753a813d3b0bb", null ],
+    [ "multi_button_set_short_time", "group__multi__button__basic__driver.html#ga8596b194582354c668ed7dc47bbd9fd2", null ],
+    [ "multi_button_set_timeout", "group__multi__button__basic__driver.html#gae785b4633535ccad258b8f861d6d2a80", null ]
+];

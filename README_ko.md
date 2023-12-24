@@ -14,7 +14,7 @@ LibDriver MULTI_BUTTON은 LibDriver가 실행하는 버튼의 전체 기능 드�
 
 LibDriver MULTI_BUTTON은 멀티 버튼과 매트릭스 버튼을 지원하며, 싱글 버튼을 사용하면 보다 효율적인 감지 방법을 사용할 수 있습니다.
 
-단일 버튼 드라이버는 [https://github.com/libdriver/button](https://github.com/libdriver/button)을 참조할 수 있습니다.
+단일 버튼 드라이버는 다음을 참조할 수 있습니다[https://github.com/libdriver/button](https://github.com/libdriver/button).
 
 ### 콘텐츠
 

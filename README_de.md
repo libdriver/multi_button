@@ -14,7 +14,7 @@ LibDriver MULTI_BUTTON ist der voll funktionsfähige Treiber für die von LibDri
 
 LibDriver MULTI_BUTTON unterstützt Mehrtasten- und Matrixtasten. Wenn Sie eine einzelne Taste verwenden, können Sie eine effizientere Erkennungsmethode verwenden.
 
-Der Single-Button-Treiber kann auf [https://github.com/libdriver/button](https://github.com/libdriver/button) verwiesen werden.
+Ein-Tasten-Treiber kann darauf verweisen [https://github.com/libdriver/button](https://github.com/libdriver/button).
 
 ### Inhaltsverzeichnis
 

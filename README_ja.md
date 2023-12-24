@@ -14,7 +14,7 @@ LibDriver MULTI_BUTTON は、LibDriver によって起動されるボタンの�
 
 LibDriver MULTI_BUTTON はマルチボタンとマトリックスボタンをサポートしており、単一ボタンを使用する場合は、より効率的な検出方法を使用できます。
 
-シングル ボタン ドライバーは、[https://github.com/libdriver/button](https://github.com/libdriver/button) を参照できます。
+シングルボタンドライバーは参照できます[https://github.com/libdriver/button](https://github.com/libdriver/button)。
 
 ### 目次
 

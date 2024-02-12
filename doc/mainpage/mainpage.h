@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver MULTI_BUTTON
- * @brief     libdriver multi_button is a full function driver of multi_button and it can run in both MCU and Linux platform.
+ * @brief     LibDriver MULTI_BUTTON is a full function driver of MULTI_BUTTON and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *

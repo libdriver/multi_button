@@ -49,7 +49,7 @@ LibDriver MULTI_BUTTON支持多按键和矩阵按键检测，如果您使用单�
 
 参考/interface目录下与平台无关的GPIO总线模板，完成指定平台的GPIO总线驱动。
 
-将/src目录，/interface目录和/example目录加入工程。
+将/src目录，您使用平台的接口驱动和您开发的驱动加入工程，如果您想要使用默认的范例驱动，可以将/example目录加入您的工程。
 
 ### 使用
 

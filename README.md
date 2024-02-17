@@ -49,11 +49,11 @@ Single button driver can refer to [https://github.com/libdriver/button](https://
 
 Reference /interface GPIO platform independent template and finish your platform GPIO driver.
 
-Add /src, /interface and /example to your project.
+Add the /src directory, the interface driver for your platform, and your own drivers to your project, if you want to use the default example drivers, add the /example directory to your project.
 
 ### Usage
 
-You can refer to the examples in the/example directory to complete your own driver. If you want to use the default programming examples, here's how to use them.
+You can refer to the examples in the /example directory to complete your own driver. If you want to use the default programming examples, here's how to use them.
 
 #### example basic
 

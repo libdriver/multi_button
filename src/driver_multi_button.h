@@ -95,7 +95,7 @@ typedef struct multi_button_s
  */
 typedef struct multi_button_time_s
 {
-    uint32_t s;         /**< second */
+    uint64_t s;         /**< second */
     uint32_t us;        /**< microsecond */
 } multi_button_time_t;
 

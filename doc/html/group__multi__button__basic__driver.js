@@ -5,7 +5,7 @@ var group__multi__button__basic__driver =
       [ "times", "structmulti__button__s.html#a6d64faebc51e937a5e44c4ef2d58bc9b", null ]
     ] ],
     [ "multi_button_time_s", "structmulti__button__time__s.html", [
-      [ "s", "structmulti__button__time__s.html#a2dee666f0c1fe072c549ff86b1d0a8ab", null ],
+      [ "s", "structmulti__button__time__s.html#a963840de6724d0090ffb30f4b6e6f8fc", null ],
       [ "us", "structmulti__button__time__s.html#aacd10328101739a1c5576f0fbb6fd8e7", null ]
     ] ],
     [ "multi_button_decode_s", "structmulti__button__decode__s.html", [

@@ -15,6 +15,6 @@ var NAVTREEINDEX1 =
 "structmulti__button__single__s.html#adb3450c4b6dd700c4cbc753f7399c356":[0,0,1,3,6],
 "structmulti__button__single__s.html#aeb2b9296292e67a9da289387bbcad1ab":[0,0,1,3,2],
 "structmulti__button__time__s.html":[0,0,1,1],
-"structmulti__button__time__s.html#a2dee666f0c1fe072c549ff86b1d0a8ab":[0,0,1,1,0],
+"structmulti__button__time__s.html#a963840de6724d0090ffb30f4b6e6f8fc":[0,0,1,1,0],
 "structmulti__button__time__s.html#aacd10328101739a1c5576f0fbb6fd8e7":[0,0,1,1,1]
 };

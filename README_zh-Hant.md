@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/multi_button/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-按鈕是一種簡單的開關機制用於控制機器或過程的某些方面。 按鈕通常由硬質資料製成，通常是塑膠或金屬。 表面通常是平坦的或形狀適合人的手指或手以便容易地被壓下或推動。 按鈕通常是偏置開關，儘管許多非偏置按鈕（由於其物理性質）仍然需要彈簧才能返回到未按下的狀態。
+按鈕是一種簡單的開關機制用於控制機器或過程的某些方面。 按鈕一般由硬質資料製成，常見的是塑膠或金屬。 按鈕表面是平坦的或形狀適合人手指的。 按鈕通常是偏置開關，儘管許多非偏置按鈕（由於其物理性質）仍然需要彈簧才能返回到未按下的狀態。
 
 LibDriver MULTI_ BUTTON是LibDriver推出的MULTI_ BUTTON全功能驅動，該驅動提供多按鍵或者矩陣按壓檢測、釋放檢測、按一下檢測、按兩下檢測、三擊檢測、重複按鍵檢測、短按檢測、長按檢測等功能並且它符合MISRA標準。
 

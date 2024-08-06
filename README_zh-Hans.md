@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/multi_button/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-按钮是一种简单的开关机制用于控制机器或过程的某些方面。 按钮通常由硬质材料制成，通常是塑料或金属。 表面通常是平坦的或形状适合人的手指或手以便容易地被压下或推动。 按钮通常是偏置开关，尽管许多非偏置按钮（由于其物理性质）仍然需要弹簧才能返回到未按下的状态。
+按钮是一种简单的开关机制用于控制机器或过程的某些方面。 按钮一般由硬质材料制成，常见的是塑料或金属。 按钮表面是平坦的或形状适合人手指的。 按钮通常是偏置开关，尽管许多非偏置按钮（由于其物理性质）仍然需要弹簧才能返回到未按下的状态。
 
 LibDriver MULTI_BUTTON是LibDriver推出的MULTI_BUTTON全功能驱动，该驱动提供多按键或者矩阵按压检测、释放检测、单击检测、双击检测、三击检测、重复按键检测、短按检测、长按检测等功能并且它符合MISRA标准。
 

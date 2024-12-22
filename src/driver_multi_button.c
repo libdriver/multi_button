@@ -61,7 +61,7 @@
 
 /**
  * @brief     set param
- * @param[in] *handle points to a multi_button handle structure
+ * @param[in] *handle pointer to a multi_button handle structure
  * @note      none
  */
 static void a_multi_button_set_param(multi_button_handle_t *handle)
@@ -77,9 +77,9 @@ static void a_multi_button_set_param(multi_button_handle_t *handle)
 
 /**
  * @brief     reset all
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] row is the set row
- * @param[in] col is the set col
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] row set row
+ * @param[in] col set col
  * @note      none
  */
 static void a_multi_button_reset(multi_button_handle_t *handle, uint8_t row, uint8_t col)
@@ -104,9 +104,9 @@ static void a_multi_button_reset(multi_button_handle_t *handle, uint8_t row, uin
 
 /**
  * @brief     single period
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] row is the set row
- * @param[in] col is the set col
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] row set row
+ * @param[in] col set col
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -342,10 +342,10 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
 
 /**
  * @brief     multi button single
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] row is the set row
- * @param[in] col is the set col
- * @param[in] level is the gpio level
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] row set row
+ * @param[in] col set col
+ * @param[in] level gpio level
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -496,8 +496,8 @@ static uint8_t a_multi_button_single(multi_button_handle_t *handle, uint8_t row,
 
 /**
  * @brief     multi button set matrix level
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] row is the set row
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] row set row
  * @note      none
  */
 static uint8_t a_multi_button_set_matrix_level(multi_button_handle_t *handle, uint8_t row)
@@ -535,7 +535,7 @@ static uint8_t a_multi_button_set_matrix_level(multi_button_handle_t *handle, ui
 
 /**
  * @brief     process
- * @param[in] *handle points to a multi_button handle structure
+ * @param[in] *handle pointer to a multi_button handle structure
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -603,9 +603,9 @@ uint8_t multi_button_process(multi_button_handle_t *handle)
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] row is the max row of buttons
- * @param[in] col is the max col of buttons
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] row max row of buttons
+ * @param[in] col max col of buttons
  * @return    status code
  *            - 0 success
  *            - 1 gpio initialization failed
@@ -746,7 +746,7 @@ uint8_t multi_button_init(multi_button_handle_t *handle, uint8_t row, uint8_t co
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a multi_button handle structure
+ * @param[in] *handle pointer to a multi_button handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -780,8 +780,8 @@ uint8_t multi_button_deinit(multi_button_handle_t *handle)
 
 /**
  * @brief     set timeout
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -806,8 +806,8 @@ uint8_t multi_button_set_timeout(multi_button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get timeout
- * @param[in]  *handle points to a multi_button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a multi_button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -832,8 +832,8 @@ uint8_t multi_button_get_timeout(multi_button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set interval
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -858,8 +858,8 @@ uint8_t multi_button_set_interval(multi_button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get interval
- * @param[in]  *handle points to a multi_button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a multi_button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -884,8 +884,8 @@ uint8_t multi_button_get_interval(multi_button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set short time
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -910,8 +910,8 @@ uint8_t multi_button_set_short_time(multi_button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get short time
- * @param[in]  *handle points to a multi_button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a multi_button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -936,8 +936,8 @@ uint8_t multi_button_get_short_time(multi_button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set long time
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -962,8 +962,8 @@ uint8_t multi_button_set_long_time(multi_button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get long time
- * @param[in]  *handle points to a multi_button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a multi_button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -988,8 +988,8 @@ uint8_t multi_button_get_long_time(multi_button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set repeat time
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -1014,8 +1014,8 @@ uint8_t multi_button_set_repeat_time(multi_button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get repeat time
- * @param[in]  *handle points to a multi_button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a multi_button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -1040,8 +1040,8 @@ uint8_t multi_button_get_repeat_time(multi_button_handle_t *handle, uint32_t *us
 
 /**
  * @brief     set repeat cnt
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] cnt is the set repeat counter
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] cnt set repeat counter
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -1066,8 +1066,8 @@ uint8_t multi_button_set_repeat_cnt(multi_button_handle_t *handle, uint32_t cnt)
 
 /**
  * @brief      get repeat cnt
- * @param[in]  *handle points to a multi_button handle structure
- * @param[out] *cnt points to a counter buffer
+ * @param[in]  *handle pointer to a multi_button handle structure
+ * @param[out] *cnt pointer to a counter buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -1092,8 +1092,8 @@ uint8_t multi_button_get_repeat_cnt(multi_button_handle_t *handle, uint32_t *cnt
 
 /**
  * @brief     set period
- * @param[in] *handle points to a multi_button handle structure
- * @param[in] period is the set period
+ * @param[in] *handle pointer to a multi_button handle structure
+ * @param[in] period set period
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -1118,8 +1118,8 @@ uint8_t multi_button_set_period(multi_button_handle_t *handle, uint32_t period)
 
 /**
  * @brief      get period
- * @param[in]  *handle points to a multi_button handle structure
- * @param[out] *period points to a period buffer
+ * @param[in]  *handle pointer to a multi_button handle structure
+ * @param[out] *period pointer to a period buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -1144,7 +1144,7 @@ uint8_t multi_button_get_period(multi_button_handle_t *handle, uint32_t *period)
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a multi_button info structure
+ * @param[out] *info pointer to a multi_button info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

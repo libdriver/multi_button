@@ -54,9 +54,9 @@ extern uint8_t multi_button_interface_timer_init(void);     /**< timer init func
 
 /**
  * @brief     interface receive callback
- * @param[in] row is the requested row
- * @param[in] col is the requested col
- * @param[in] *data points to an multi_button_t structure
+ * @param[in] row requested row
+ * @param[in] col requested col
+ * @param[in] *data pointer to an multi_button_t structure
  * @note      none
  */
 static void a_receive_callback(uint16_t row, uint16_t col, multi_button_t *data)
@@ -149,8 +149,8 @@ static void a_receive_callback(uint16_t row, uint16_t col, multi_button_t *data)
 
 /**
  * @brief     multi_button full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed

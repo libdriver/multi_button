@@ -63,9 +63,9 @@ extern "C"{
 
 /**
  * @brief     basic example init
- * @param[in] row is the max row of buttons
- * @param[in] col is the max col of buttons
- * @param[in] *callback points to an irq callback address
+ * @param[in] row max row of buttons
+ * @param[in] col max col of buttons
+ * @param[in] *callback pointer to an irq callback address
  * @return    status code
  *            - 0 success
  *            - 1 init failed

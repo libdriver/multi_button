@@ -52,8 +52,8 @@ extern "C"{
 
 /**
  * @brief     trigger test
- * @param[in] row is the max row of buttons
- * @param[in] col is the max col of buttons
+ * @param[in] row max row of buttons
+ * @param[in] col max col of buttons
  * @return    status code
  *            - 0 success
  *            - 1 test failed

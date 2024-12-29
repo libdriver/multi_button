@@ -41,9 +41,9 @@ static volatile uint16_t gs_flag;              /**< flag */
 
 /**
  * @brief     interface receive callback
- * @param[in] row is the requested row
- * @param[in] col is the requested col
- * @param[in] *data points to an multi_button_t structure
+ * @param[in] row requested row
+ * @param[in] col requested col
+ * @param[in] *data pointer to an multi_button_t structure
  * @note      none
  */
 static void a_receive_callback(uint16_t row, uint16_t col, multi_button_t *data)
@@ -136,8 +136,8 @@ static void a_receive_callback(uint16_t row, uint16_t col, multi_button_t *data)
 
 /**
  * @brief     trigger test
- * @param[in] row is the max row of buttons
- * @param[in] col is the max col of buttons
+ * @param[in] row max row of buttons
+ * @param[in] col max col of buttons
  * @return    status code
  *            - 0 success
  *            - 1 test failed

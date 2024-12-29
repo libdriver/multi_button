@@ -66,8 +66,8 @@ uint8_t multi_button_interface_matrix_deinit(void)
 
 /**
  * @brief     interface matrix write row
- * @param[in] num is the row number
- * @param[in] level is the set level
+ * @param[in] num row number
+ * @param[in] level set level
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -80,7 +80,7 @@ uint8_t multi_button_interface_matrix_write_row(uint16_t num, uint8_t level)
 
 /**
  * @brief      interface matrix read row
- * @param[out] *col_array points to a col array buffer
+ * @param[out] *col_array pointer to a col array buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -93,7 +93,7 @@ uint8_t multi_button_interface_matrix_read_row(uint32_t *col_array)
 
 /**
  * @brief     interface timestamp read
- * @param[in] *t points to a multi_button_time structure
+ * @param[in] *t pointer to a multi_button_time structure
  * @return    status code
  *            - 0 success
  *            - 1 read failed
@@ -116,7 +116,7 @@ uint8_t multi_button_interface_timestamp_read(multi_button_time_t *t)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void multi_button_interface_delay_ms(uint32_t ms)
@@ -126,7 +126,7 @@ void multi_button_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void multi_button_interface_debug_print(const char *const fmt, ...)
@@ -146,9 +146,9 @@ void multi_button_interface_debug_print(const char *const fmt, ...)
 
 /**
  * @brief     interface receive callback
- * @param[in] row is the requested row
- * @param[in] col is the requested col
- * @param[in] *data points to an multi_button_t structure
+ * @param[in] row requested row
+ * @param[in] col requested col
+ * @param[in] *data pointer to an multi_button_t structure
  * @note      none
  */
 void multi_button_interface_receive_callback(uint16_t row, uint16_t col, multi_button_t *data)

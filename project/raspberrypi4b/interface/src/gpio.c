@@ -219,8 +219,8 @@ uint8_t gpio_matrix_init(void)
 
 /**
  * @brief     gpio write row
- * @param[in] num is the row number
- * @param[in] level is the set level
+ * @param[in] num row number
+ * @param[in] level set level
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -262,7 +262,7 @@ uint8_t gpio_matrix_write_row(uint16_t num, uint8_t level)
 
 /**
  * @brief      gpio matrix read row
- * @param[out] *col_array points to a col array buffer
+ * @param[out] *col_array pointer to a col array buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed

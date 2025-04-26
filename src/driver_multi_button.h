@@ -64,6 +64,20 @@ extern "C"{
 #endif
 
 /**
+ * @brief multi_button each length definition
+ */
+#ifndef MULTI_BUTTON_EACH_LENGTH
+    #define MULTI_BUTTON_EACH_LENGTH      16          /**< 16 */
+#endif
+
+/**
+ * @brief check range
+ */
+#if (MULTI_BUTTON_EACH_LENGTH < 8)
+    #error "MULTI_BUTTON_EACH_LENGTH < 8"
+#endif
+
+/**
  * @brief multi_button status enumeration definition
  */
 typedef enum
@@ -113,13 +127,13 @@ typedef struct multi_button_decode_s
  */
 typedef struct multi_button_single_s
 {
-    multi_button_time_t last_time;           /**< last time */
-    multi_button_decode_t decode[16];        /**< decode buffer */
-    uint16_t decode_len;                     /**< decode length */
-    uint8_t short_triggered;                 /**< short triggered */
-    uint8_t long_triggered;                  /**< long triggered */
-    uint8_t level;                           /**< gpio level */
-    uint8_t cnt;                             /**< detect times */
+    multi_button_time_t last_time;                                 /**< last time */
+    multi_button_decode_t decode[MULTI_BUTTON_EACH_LENGTH];        /**< decode buffer */
+    uint16_t decode_len;                                           /**< decode length */
+    uint8_t short_triggered;                                       /**< short triggered */
+    uint8_t long_triggered;                                        /**< long triggered */
+    uint8_t level;                                                 /**< gpio level */
+    uint8_t cnt;                                                   /**< detect times */
 } multi_button_single_t;
 
 /**

@@ -452,7 +452,7 @@ static uint8_t a_multi_button_single(multi_button_handle_t *handle, uint8_t row,
         }
     }
     
-    if (handle->button[offset].decode_len >= 15)                                                 /* check the max length */
+    if (handle->button[offset].decode_len >= (MULTI_BUTTON_EACH_LENGTH - 1))                     /* check the max length */
     {
         a_multi_button_reset(handle, row, col);                                                  /* reset all */
     }

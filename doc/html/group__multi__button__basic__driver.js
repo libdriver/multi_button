@@ -14,7 +14,7 @@ var group__multi__button__basic__driver =
     ] ],
     [ "multi_button_single_s", "structmulti__button__single__s.html", [
       [ "cnt", "structmulti__button__single__s.html#a052c6d6c4fd9b6fe5b2c4330b1376e57", null ],
-      [ "decode", "structmulti__button__single__s.html#ab47e309f84fc1d288b9ea1e14c312977", null ],
+      [ "decode", "structmulti__button__single__s.html#af51f42a73cf1fb146dfb123544673fb5", null ],
       [ "decode_len", "structmulti__button__single__s.html#aeb2b9296292e67a9da289387bbcad1ab", null ],
       [ "last_time", "structmulti__button__single__s.html#ac4d1b005e65b8045643ccf16c6b47e93", null ],
       [ "level", "structmulti__button__single__s.html#abbb6c7c49508c1ac374683f2d1159e08", null ],
@@ -54,6 +54,7 @@ var group__multi__button__basic__driver =
       [ "temperature_max", "structmulti__button__info__s.html#a3366a5dce9b829e03c3d321c2b4df3f6", null ],
       [ "temperature_min", "structmulti__button__info__s.html#a8f9dbe66ac0b66ebae0a36fcb4ba368e", null ]
     ] ],
+    [ "MULTI_BUTTON_EACH_LENGTH", "group__multi__button__basic__driver.html#ga3b26e7b44c59d43af2f95097e3f2c0d7", null ],
     [ "MULTI_BUTTON_NUMBER", "group__multi__button__basic__driver.html#ga032a05eb35adc91e712696bcefb250eb", null ],
     [ "multi_button_decode_t", "group__multi__button__basic__driver.html#gac74e1fdeb3c284ea4065b93709ec7251", null ],
     [ "multi_button_handle_t", "group__multi__button__basic__driver.html#ga2a07ba574ad643733038300a6f66386c", null ],

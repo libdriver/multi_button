@@ -136,8 +136,8 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
         }
         if (handle->button[offset].decode_len == 1)                                                             /* short or long press */
         {
-            diff = (int64_t)(t.s - handle->button[offset].decode[0].t.s) * 1000000 + 
-                   (int64_t)(t.us - handle->button[offset].decode[0].t.us) ;                                    /* now - last time */
+            diff = (int64_t)((int64_t)t.s - (int64_t)handle->button[offset].decode[0].t.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->button[offset].decode[0].t.us);                   /* now - last time */
             if ((uint32_t)(diff) >= handle->short_time)                                                         /* check short time */
             {
                 if (handle->button[offset].short_triggered == 0)                                                /* if no triggered */
@@ -173,8 +173,8 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
         }
         else if (handle->button[offset].decode_len == 2)                                                        /* single click, short or long press */
         {
-            diff = (int64_t)(t.s - handle->button[offset].decode[1].t.s) * 1000000 + 
-                   (int64_t)(t.us - handle->button[offset].decode[1].t.us) ;                                    /* now - last time */
+            diff = (int64_t)((int64_t)t.s - (int64_t)handle->button[offset].decode[1].t.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->button[offset].decode[1].t.us);                   /* now - last time */
             if (handle->button[offset].long_triggered != 0)                                                     /* if long no triggered */
             {
                 multi_button_t multi_button;
@@ -208,8 +208,8 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
         }
         else if (handle->button[offset].decode_len == 4)                                                        /* double click */
         {
-            diff = (int64_t)(t.s - handle->button[offset].last_time.s) * 1000000 + 
-                   (int64_t)(t.us - handle->button[offset].last_time.us) ;                                      /* now - last time */
+            diff = (int64_t)((int64_t)t.s - (int64_t)handle->button[offset].last_time.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->button[offset].last_time.us);                     /* now - last time */
             if ((uint32_t)(diff) >= handle->repeat_time)                                                        /* check repeat time */
             {
                 multi_button_t multi_button;
@@ -246,8 +246,8 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
         }
         else if (handle->button[offset].decode_len == 6)                                                        /* triple click */
         {
-            diff = (int64_t)(t.s - handle->button[offset].last_time.s) * 1000000 + 
-                   (int64_t)(t.us - handle->button[offset].last_time.us) ;                                      /* now - last time */
+            diff = (int64_t)((int64_t)t.s - (int64_t)handle->button[offset].last_time.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->button[offset].last_time.us);                     /* now - last time */
             if ((uint32_t)(diff) >= handle->repeat_time)                                                        /* check repeat time */
             {
                 multi_button_t multi_button;
@@ -286,8 +286,8 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
         {
             if ((handle->button[offset].decode_len > 6) && (handle->button[offset].decode_len % 2 == 0))        /* check time */
             {
-                diff = (int64_t)(t.s - handle->button[offset].last_time.s) * 1000000 + 
-                       (int64_t)(t.us - handle->button[offset].last_time.us) ;                                  /* now - last time */
+                diff = (int64_t)((int64_t)t.s - (int64_t)handle->button[offset].last_time.s) * 1000000 + 
+                       (int64_t)((int64_t)t.us - (int64_t)handle->button[offset].last_time.us);                 /* now - last time */
                 if ((uint32_t)(diff) >= handle->repeat_time)                                                    /* check repeat time */
                 {
                     multi_button_t multi_button;
@@ -324,8 +324,8 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
             }
             else
             {
-                diff = (int64_t)(t.s - handle->button[offset].last_time.s) * 1000000 + 
-                       (int64_t)(t.us - handle->button[offset].last_time.us) ;                                  /* now - last time */
+                diff = (int64_t)((int64_t)t.s - (int64_t)handle->button[offset].last_time.s) * 1000000 + 
+                       (int64_t)((int64_t)t.us - (int64_t)handle->button[offset].last_time.us);                 /* now - last time */
                 if ((uint32_t)(diff) >= handle->timeout)                                                        /* check timeout */
                 {
                     handle->debug_print("multi_button: reset checking.\n");                                     /* reset checking */
@@ -400,8 +400,8 @@ static uint8_t a_multi_button_single(multi_button_handle_t *handle, uint8_t row,
         
         return 1;                                                                                /* return error */
     }
-    diff = (int64_t)(t.s - handle->button[offset].last_time.s) * 1000000 + 
-           (int64_t)(t.us - handle->button[offset].last_time.us) ;                               /* now - last time */
+    diff = (int64_t)((int64_t)t.s - (int64_t)handle->button[offset].last_time.s) * 1000000 + 
+           (int64_t)((int64_t)t.us - (int64_t)handle->button[offset].last_time.us);              /* now - last time */
     if (press_release != 0)                                                                      /* if press */
     {
         if ((handle->button[offset].decode_len % 2) == 0)                                        /* press */
@@ -559,8 +559,8 @@ uint8_t multi_button_process(multi_button_handle_t *handle)
         
         return 1;                                                                                       /* return error */
     }
-    diff = (int64_t)(t.s - handle->check_time.s) * 1000000 + 
-           (int64_t)(t.us - handle->check_time.us) ;                                                    /* now - last time */
+    diff = (int64_t)((int64_t)t.s - (int64_t)handle->check_time.s) * 1000000 + 
+           (int64_t)((int64_t)t.us - (int64_t)handle->check_time.us);                                   /* now - last time */
     if ((uint32_t)(diff) > handle->period)                                                              /* check period */
     {
         handle->check_time.s = t.s;                                                                     /* save s */

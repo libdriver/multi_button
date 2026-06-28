@@ -188,7 +188,7 @@ static uint8_t a_multi_button_single_period(multi_button_handle_t *handle, uint8
             {
                 multi_button_t multi_button;
                 
-                multi_button.status = MULTI_BUTTON_STATUS_SHORT_PRESS_END;                                      /* long press end */
+                multi_button.status = MULTI_BUTTON_STATUS_SHORT_PRESS_END;                                      /* short press end */
                 multi_button.times = 0;                                                                         /* 0 times */
                 handle->receive_callback(row, col, &multi_button);                                              /* run the reception callback */
                 a_multi_button_reset(handle, row, col);                                                         /* reset all */
@@ -722,8 +722,8 @@ uint8_t multi_button_init(multi_button_handle_t *handle, uint8_t row, uint8_t co
     {
         for (j = 0; j < col; j++)                                                           /* loop col */
         {
-            offset = handle->row * i + j;                                                   /* get offset */
-            a_multi_button_reset(handle, row, col);                                         /* reset all */
+            offset = handle->col * i + j;                                                   /* get offset */
+            a_multi_button_reset(handle, i, j);                                             /* reset all */
             memset(&handle->button[offset], 0, sizeof(multi_button_single_t));              /* clear button */
             handle->button[offset].cnt = 0;                                                 /* init cnt 0 */
             handle->button[offset].level = 1;                                               /* init level high */

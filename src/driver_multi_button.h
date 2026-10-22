@@ -60,7 +60,7 @@ extern "C"{
  * @brief multi_button max number definition
  */
 #ifndef MULTI_BUTTON_NUMBER
-    #define MULTI_BUTTON_NUMBER        128          /**< max 128 number */
+    #define MULTI_BUTTON_NUMBER        16          /**< max 16 number */
 #endif
 
 /**

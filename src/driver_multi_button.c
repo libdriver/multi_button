@@ -552,6 +552,14 @@ uint8_t multi_button_process(multi_button_handle_t *handle)
     int64_t diff;
     multi_button_time_t t;
     
+    if (handle == NULL)                                                                                 /* check handle */
+    {
+        return 2;                                                                                       /* return error */
+    }
+    if (handle->inited != 1)                                                                            /* check handle initialization */
+    {
+        return 3;                                                                                       /* return error */
+    }
     res = handle->timestamp_read(&t);                                                                   /* timestamp read */
     if (res != 0)                                                                                       /* check result */
     {
@@ -583,14 +591,14 @@ uint8_t multi_button_process(multi_button_handle_t *handle)
         for (j = 0; j < handle->col; j++)                                                               /* loop col all */
         {
             res = a_multi_button_single(handle, i, j, (col_array >> j) & 0x1);                          /* single process */
-            if (res != 0)                                                                               /* check result */
+            if (res == 1)                                                                               /* check result */
             {
                 return 1;                                                                               /* return error */
             }
             if ((uint32_t)(diff) >= handle->period)                                                     /* check period */
             {
                 res = a_multi_button_single_period(handle, i, j);                                       /* read period */
-                if (res != 0)                                                                           /* check result */
+                if (res == 1)                                                                           /* check result */
                 {
                     return 1;                                                                           /* return error */
                 }
@@ -723,7 +731,6 @@ uint8_t multi_button_init(multi_button_handle_t *handle, uint8_t row, uint8_t co
         for (j = 0; j < col; j++)                                                           /* loop col */
         {
             offset = handle->col * i + j;                                                   /* get offset */
-            a_multi_button_reset(handle, i, j);                                             /* reset all */
             memset(&handle->button[offset], 0, sizeof(multi_button_single_t));              /* clear button */
             handle->button[offset].cnt = 0;                                                 /* init cnt 0 */
             handle->button[offset].level = 1;                                               /* init level high */
